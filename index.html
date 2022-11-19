@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+<meta name="description" content="frontendmentor challenge News homepage">
+
+</head>
+<body>
+  <header>
+    <div id="span-menu-id" class="span-menu">
+      <img onclick="mostrar()" id="close-icon" class="close" src="assets/images/icon-menu-close.svg" aria-hidden="true">
+      <ul>
+        <li style="--clr:#00ade1">
+         <a href="#" data-text="&nbsp;Home"> &nbsp;Home&nbsp;</a>
+        </li>
+        <li style="--clr:#ff6493">
+         <a href="#" data-text="&nbsp;New">&nbsp;New &nbsp;</a>
+         </li>
+        <li style="--clr:#ffdd1c">
+          <a href="#" data-text="&nbsp;Popular">
+            &nbsp;Popular&nbsp;
+        </a>
+        </li>
+        <li style="--clr:#00dc82">
+          <a href="#" data-text="&nbsp;Trending">
+            &nbsp;Trending&nbsp;
+        </a>
+        </li>
+        <li style="--clr:#dc00d4">
+          <a href="#" data-text="&nbsp;Categories">
+            &nbsp;Categories&nbsp;
+        </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+<main id="all-container">
+  <nav>
+    <a href="#"><img src="assets/images/logo.svg" aria-hidden="true"></a>
+    <div class="span-menu-list">
+      <ul>
+        <li style="--clr:#00ade1">
+         <a href="#" data-text="&nbsp;Home"> &nbsp;Home&nbsp;</a>
+        </li>
+        <li style="--clr:#ff6493">
+         <a href="#" data-text="&nbsp;New">&nbsp;New &nbsp;</a>
+         </li>
+        <li style="--clr:#ffdd1c">
+          <a href="#" data-text="&nbsp;Popular">
+            &nbsp;Popular&nbsp;
+        </a>
+        </li>
+        <li style="--clr:#00dc82">
+          <a href="#" data-text="&nbsp;Trending">
+            &nbsp;Trending&nbsp;
+        </a>
+        </li>
+        <li style="--clr:#dc00d4">
+          <a href="#" data-text="&nbsp;Categories">
+            &nbsp;Categories&nbsp;
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="list">
+      <img onclick="ocultar()" id="menu-icon" class="menu" src="assets/images/icon-menu.svg" aria-hidden="true">
+    </nav>
+  </div>
+  <div class="container-boxs">
+   <div class="contain-top-box">
+
+    <section class="web3-section">
+      <picture>
+        <source media="(max-width: 600px)" width="100%" srcset="assets/images/image-web-3-mobile.jpg">
+        <img src="assets/images/image-web-3-desktop.jpg">
+      </picture>
+      <div class="stats">
+
+        <h1> The Bright Future of Web 3.0?</h1>
+        <div class="p-button">
+
+          <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise? </p>
+            
+            <button id="boton"> Read more</button>
+          </div>
+        </div>
+      </section>
+      <aside class="new-section">
+        
+        <h2> New </h2>
+        
+        <p> <span> Hydrogen VS Electric Cars</span> <br>
+          Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr>
+          <p>
+            
+            <span>The Downsides of AI Artistry</span> <br>
+            What are the possible adverse effects of on-demand AI image generation?
+          </p>
+          <hr>
+          <p>
+            <span> Is VC Funding Drying Up?</span> <br>
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </aside>
+      </div>
+        <section class="cards">
+          <div class="card">
+            
+        <img src="assets/images/image-retro-pcs.jpg" aria-hidden="true">
+        <div class="contain-card">
+
+          <h3> 01</h3>
+          <p> <span> Reviving Retro PCs</span> <br>
+            What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+      <div class="card">
+         <img src="assets/images/image-top-laptops.jpg" aria-hidden="true">
+         <div class="contain-card">
+        <h3> 02</h3>
+        <p> <span> Top 10 Laptops of 2022</span> <br>
+          Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="card">
+<img src="assets/images/image-gaming-growth.jpg" aria-hidden="true">
+<div class="contain-card">
+        <h3> 03</h3>
+        <p> <span> The Growth of Gaming</span> <br>
+          How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script>
+  function ocultar(){
+    document.getElementById('all-container').style.filter='brightness(0.3)';
+    document.getElementById('menu-icon').style.display = 'none';
+    document.getElementById('close-icon').style.display ='block'
+    document.getElementById('span-menu-id').style.transform ='translateX(30%)';
+  }
+  function mostrar(){
+    document.getElementById('all-container').style.filter='brightness(1)';
+    document.getElementById('menu-icon').style.display = 'block';
+    document.getElementById('close-icon').style.display ='none';
+    document.getElementById('span-menu-id').style.transform ='translateX(200%)';
+  }
+</script>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jose Fuentes</a>.
+  </div> -->
+</body>
+</html>
