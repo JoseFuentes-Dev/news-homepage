@@ -146,10 +146,13 @@ button:hover {
     font-size: 1.3em;
     font-weight: 700;
     line-height: 35px;
+    cursor: pointer;
+    user-select: none;
 }
 .new-section span:hover{
     transition: all 1s ease;
     color: var(--Soft-orange);
+  
 }
 .new-section p{
     line-height: 25px;
@@ -188,6 +191,8 @@ button:hover {
     font-weight: 700;
     font-size: 1.15em;
     color: var(--Very-dark-blue);
+    user-select: none;
+    cursor: pointer;
 }
 .card span:hover{
     color: var(--Soft-red);
