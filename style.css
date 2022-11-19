@@ -17,13 +17,14 @@ body{
     display: flex;
     place-items: center;
     min-height: 100vh;
+    background-color: var(--Off-white);
 }
 main{
     display: flex;
     flex-direction: column;
     padding: 20px 15px 70px 15px;
     gap: 30px;
-    background-color: white;
+
 }
 /* <-------------nav section----------------> */
 nav{
